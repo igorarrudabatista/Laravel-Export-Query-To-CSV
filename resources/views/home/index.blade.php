@@ -142,9 +142,9 @@ body {
   <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" href="/css/style-down.css">
-  <link rel="stylesheet" href="/css/style-index.css">
-  <link rel="stylesheet" href="/css/style-text.css">
+  <link rel="stylesheet" href="{{asset ('/css/style-down.css') }}">
+  <link rel="stylesheet" href="{{asset ('/css/style-index.css') }}">
+  <link rel="stylesheet" href="{{asset ('/css/style-text.css') }}">
 
   
 </head>
@@ -168,8 +168,10 @@ body {
                 <img src="{{ Auth::user()->profile_photo_url }}" class="avatar" alt="Avatar">
                 {{ Auth::user()->name }} <b class="caret"></b></a>
               <div class="dropdown-menu">
-         
-                <a href="#" class="dropdown-item"><i class="material-icons">&#xE8AC;</i> Logout </a>
+				<form action="{{ asset('/logout') }}" method="post">
+					@csrf
+                <button type="submit"  class="dropdown-item"><i class="material-icons">&#xE8AC;</i> Logout </a>
+				</form>
               </div>
             </div>
           </div>
@@ -220,8 +222,8 @@ body {
 <script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/CustomEase.min.js'></script>
 <script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/DrawSVGPlugin.min.js'>
 </script>
-<script  src="/js/script-down.js"></script>
-<script  src="/js/script-text.js"></script>
+<script  src="{{asset ('/js/script-down.js') }}"></script>
+<script  src="{{asset ('/js/script-text.js') }}"></script>
 
 
 

@@ -39,3 +39,5 @@ Route::get('/matricula/csv', [GedMatriculaController::class, 'exportCsv']);
 
 
 });
+
+Route::post('/logout', [HomeController::class, 'logout']);
