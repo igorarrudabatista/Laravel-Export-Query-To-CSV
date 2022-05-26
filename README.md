@@ -1,5 +1,5 @@
-## Sistema desenvolvido para a SEDUC MT - Exportar consulta SQL para arquivo CSV
-- **Laravel / Blade / Jestream Livewire**
+## Sistema desenvolvido para a SEDUC MT - (Exportar consulta SQL para arquivo .CSV)
+- **Laravel / Blade / jetstream Livewire**
 - **CSV com delimitador '.'**
 - **Banco de dados SQL**
 - **Bootstrap**
