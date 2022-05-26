@@ -169,7 +169,7 @@ body {
                 {{ Auth::user()->name }} <b class="caret"></b></a>
               <div class="dropdown-menu">
          
-                <a href="#" class="dropdown-item"><i class="material-icons">&#xE8AC;</i> Logout</a>
+                <a href="#" class="dropdown-item"><i class="material-icons">&#xE8AC;</i> Logout </a>
               </div>
             </div>
           </div>
